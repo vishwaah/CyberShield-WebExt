@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CyberShield</h1>
+        <form id="urlForm">
+            <input type="text" id="urlInput" placeholder="Enter website URL" required>
+            <button type="submit">Check URL</button>
+        </form>
+
+        <!-- Error message container -->
+        <div id="error-message" class="hidden"></div>
+
+        <!-- Loading animation -->
+        <div id="loading" class="hidden">Checking URL<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+
+        <!-- Results Section -->
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <div id="score"></div>
+
+            <!-- Score Bar -->
+            <div id="score-bar-container" class="hidden">
+                <div id="score-bar"></div>
+            </div>
+
+            <pre id="details"></pre>
+
+            <!-- Download Report Button -->
+            <a id="download-report" class="hidden">Download Report</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Security Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CyberShield</h1>
+        <form id="urlForm">
+            <input type="text" id="urlInput" placeholder="Enter website URL" required>
+            <button type="submit">Check URL</button>
+        </form>
+        
+        <!-- Error message container -->
+        <div id="error-message" style="color: red; font-weight: bold; margin-top: 20px;"></div>
+
+        <!-- Loading animation -->
+        <div id="loading" style="display: none; font-weight: bold; color: #007bff; margin-top: 20px;">
+            Checking URL<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <div id="score"></div>
+
+            <!-- Score Bar -->
+            <div id="score-bar-container" class="hidden">
+                <div id="score-bar"></div>
+            </div>
+
+            <pre id="details"></pre>
+
+            <!-- Download Report Button -->
+            <a id="download-report" class="hidden" style="display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Download Report</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* General styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #4caf50, #45a049);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Extension container */
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title styling */
+h1 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Loading animation */
+#loading {
+    color: #007bff;
+    font-size: 1.2em;
+    margin-top: 15px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Results section */
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+#score {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Score bar container */
+#score-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    margin: 20px 0;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#score-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 15px;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* Error message */
+#error-message {
+    font-size: 1em;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Download button */
+#download-report {
+    font-size: 1em;
+    text-align: center;
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#download-report:hover {
+    background-color: #0056b3;
+}

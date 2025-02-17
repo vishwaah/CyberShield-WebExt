@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "CyberShield",
+    "description": "Check website security with a score analysis.",
+    "version": "1.0",
+    "icons": {
+        "16": "CyberShield16.jpg",
+        "48": "CyberShield48.jpg",
+        "128": "CyberShield128.jpg"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "CyberShield48.jpg"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://127.0.0.1:5000/*"
+    ]
+}
