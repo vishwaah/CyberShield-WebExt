@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 # CyberShield Web Extension
 
+=======
+# CyberShield Web Extension
+>>>>>>> b2f19963578b5b3a4cfcf5fdcc09abeb65aa3256
 CyberShield is a browser extension designed to detect fraudulent websites and protect user privacy. It provides real-time safety scores and alerts to help users browse securely.
 
 ## Features
